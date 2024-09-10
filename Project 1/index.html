@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Club</title>
+</head>
+<style>
+     /* CSS Reset */
+     body{
+        
+        background: url(https://www.fitness-world.in/wp-content/uploads/2022/01/5-Reasons-Why-Your-Residential-Building-Needs-a-Professional-Gym-Banner-1200x620.jpg);
+        object-fit: fill;
+        
+       }
+       .navbar{
+           / /* background-color: rgb(23, 22, 21); */
+            border-radius: 3px;
+            width: 700px;
+            float: left;
+            padding: 10px 52px 10px 10px;
+          }
+          .navbar li{
+            float: left; /*y krne se sare li ek line me aa gye h ur ye sb apne parent me se overflow kr jate hai mtlb backgrnd clr diya tha jo usse bhr aa gye h. esko shi krne k liye hmm overflow auto use krte h.*/
+            list-style: none ;/*jb ye ni tha to hr ek li ke samne ek point show ho rha tha jo ki ab ni ho rha h*/
+            margin: 53px 20px;
+          }
+          .navbar ul{
+            overflow: auto;
+          }
+          .navbar li a{
+            padding: 10px 20px 10px 20px ;
+            text-decoration: none;/*esko krne se pehle home,about, etc ke niche line aa rhi thi jo ab ni aa rhi h*/
+            color:rgb(243, 233, 233);
+            font-size: 25px;
+          }
+          .search{
+            float: right;
+            color: white;
+            padding: 10px 2px 10px 99px;
+          }
+          .navbar input{
+            border: 2px solid black;
+            border-radius: 4px;
+            padding: 4px 24px;
+            width:255px;
+          }
+          .navbar li a:hover{
+            background-color: rgb(250, 243, 243);
+            color: rgb(1, 16, 4);
+            text-decoration: underline;
+          }
+          .left img{
+             float: right;
+             width: 150px;
+            /* border: 2px solid red; */
+          }
+          .middle{
+            font-size: 62px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: rgb(9, 222, 45);
+            border: 2px solid rgb(205, 126, 126);
+            background-color: rgb(11, 0, 0);
+            width: 525px;
+            height: 95px;
+            padding:14px 20px 14px 20px;
+            display: inline-block;
+            text-align: center;
+            text-decoration: dotted;
+           
+           }
+           .btn{
+            padding: 3px 4px;
+            margin:10px 55px 10px 55px;
+            display:inline-block;
+            border:2px solid rgb(160, 147, 147);
+            background-color: rgb(168, 165, 165);
+            border-radius: 10px;
+           
+            
+           }
+           .container{
+            border: 3px solid rgb(36, 33, 33); 
+            border-radius: 10px;
+            width:450px;
+            height:180px;
+            margin: 200px 50px 20px 90px;
+            color: rgb(88, 184, 228);
+            background-color: rgb(253, 199, 199);
+            text-align: center;
+            display:block;
+           }
+           #group input{
+            color:rgb(198, 11, 240);
+            display:inline-block;
+            border-radius: 6px;
+            margin:2px;
+           }
+           
+          
+
+     
+     
+</style>
+<body>
+   <header>
+      <nav class= "navbar">
+          <ul>
+              <li><a href="https://google.com">Home</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Services</a></li>
+              <li><a href="https://google maps.com">Maps</a></li>
+              <div class="search">
+                     <input type="text" name="search" id="search" placeholder="For more information">
+              </div>
+          </ul>
+      </nav>
+      <div class="left">
+        <img src="https://media.istockphoto.com/id/1035561592/vector/vector-design-element-for-the-fitness-center.jpg?s=612x612&w=0&k=20&c=k3yyyEcqeivby9iE7gZIk33PAjtDqNsdEdYiMjw7qsM=" alt="">
+      </div>
+     <div class="middle">
+     FITNESS CLUB
+     </div>
+     <div class="btn">
+      <button>Call Us Now</button>
+      <button>Gmail Us</button>
+     </div>
+  </header>
+  <div class="container">
+    <h1><mark>Join the best gym of Delhi now</mark></h1>
+    <form action="noaction.php" id="group">
+    <input type="text" name="" placeholder="Enter your Name">
+    <input type="text" name="" placeholder="Enter your Age">
+    <input type="text" name="" placeholder="Enter your Gender">
+    <input type="text" name="" placeholder="Enter your Locality">
+    <input type="text" name="" placeholder="Enter your Phone Number">
+    <input type="text" name="" placeholder="Enter your Email Id">
+    <button class="btn">Submit</button>
+
+    </form>
+  </div>
+  
+</body>
+</html>
